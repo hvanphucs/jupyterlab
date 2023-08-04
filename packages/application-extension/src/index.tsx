@@ -486,7 +486,8 @@ const main: JupyterFrontEndPlugin<ITreePathUpdater> = {
     connectionLost: IConnectionLost | null
   ) => {
     const trans = translator.load('jupyterlab');
-
+    console.log("WIN#################################");
+    
     if (!(app instanceof JupyterLab)) {
       throw new Error(`${main.id} must be activated in JupyterLab.`);
     }
